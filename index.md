@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+# Vue.js + Laravel SPA + Vuetify + CrudBooster
 
-You can use the [editor on GitHub](https://github.com/zeneight/lavuebooster/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Designed is powered by [Vuetify framework](https://vuetifyjs.com/en/) based on Material Design.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The goal is to start a new SPA project quickly with routes and components structure already in place.
 
-### Markdown
+__What's included:__
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Laravel 7 default project
+- Vue.js boilerplate with Components: App, Header, Navbar, Footer, Sidebar
+- Three menu items using Vue Router: Homepage (dynamic data from API), About and Contact (both static texts) 
+- One Laravel model Product with Migrations+Seeds, one API call to get all products, using API Resource
+- Crudbooster Backend
 
-```markdown
-Syntax highlighted code block
+- - - - -
 
-# Header 1
-## Header 2
-### Header 3
+## How to use
 
-- Bulleted
-- List
+- Clone the repository with `git clone`
+- Copy `.env.example` file to `.env` and edit database credentials there
+- Run `composer install`
+- Run `php artisan key:generate`
+- Run `php artisan migrate --seed` (it has some seeded data for your testing)
+- Run `php artisan crudbooster:install` (Install Backend)
+- Run `npm install`
+- Run `npm run dev`
+- That's it: launch the main URL. 
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## License
 
-[Link](url) and ![Image](src)
-```
+Modified from [LaravelDaily](https://github.com/LaravelDaily/Laravel-Vue-SPA-Vuetify).
+Basically, feel free to use and re-use any way you want.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zeneight/lavuebooster/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+---
